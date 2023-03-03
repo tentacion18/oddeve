@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+<script>
+function Enter(){
+    var x = 0;
+    var y = 1;
+    var z;
+
+    var S = document.getElementById("number").value;
+
+    document.write(x+"<br />");
+    document.write(y+"<br />");
+
+    for(var i=3; i <= S;i++)
+    {
+        z = x + y;
+        x = y;
+        y = z;
+
+        document.write(z+"<br />");
+    }
+}
+</script>
+</head>
+<body>
+    <m2>
+        Give an input<input id="number" value="">
+        <button type="button" onclick="Enter()">Enter</button>
+    </m2>
+</body>
+
+</html>
